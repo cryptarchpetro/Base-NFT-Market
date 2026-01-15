@@ -1,4 +1,4 @@
-// base-nft-marketplace/scripts/performance.js
+// base-nft-marketplace/scripts/performance.js/
 const { ethers } = require("hardhat");
 const fs = require("fs");
 
@@ -8,7 +8,7 @@ async function analyzeNFTMarketplacePerformance() {
   const marketplaceAddress = "0x...";
   const marketplace = await ethers.getContractAt("NFTMarketplaceV3", marketplaceAddress);
   
-  // Анализ производительности
+
   const performanceReport = {
     timestamp: new Date().toISOString(),
     marketplaceAddress: marketplaceAddress,
